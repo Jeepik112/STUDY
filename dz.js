@@ -1,0 +1,1 @@
+console.log("привет, меня зовут Jeepik.")

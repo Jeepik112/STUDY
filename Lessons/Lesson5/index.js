@@ -1,4 +1,5 @@
-// ЛЕКЦИЯ 5. Задержки и асинхронность в JavaScript
+// ЛЕКЦИЯ 5. 
+// Задержки и асинхронность в JavaScript
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const processFile = async () => {

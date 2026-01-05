@@ -198,3 +198,13 @@ run();
 // промис это объект, который может быть в состоянии выполнен, отклонен или в процессе выполнения
 
 // ращобраться почему не работает терминал.
+
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+const promise = wait(1000);
+console.log(promise);
+
+// Expected output: Promise { <pending> }
+// wait это функция, которая возвращает промис с заданной задержкой

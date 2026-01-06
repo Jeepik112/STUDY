@@ -114,11 +114,11 @@ function sum(a, b) {
 }
 
 // Стрелочная функция
-const sum = (a, b) => {
+const sumArrow = (a, b) => {
   return a + b;
 };
 // или даже короче:
-const sum = (a, b) => a + b;
+const sumAB = (a, b) => a + b;
 
 // пример
 const numbers = [1, 2, 3];
@@ -127,12 +127,12 @@ console.log(doubled); // [2, 4, 6]
 // map — это метод массива, который создаёт новый массив, применяя указанную функцию к каждому элементу исходного массива.
 
 // Promise = обещание, что результат будет позже
-const promise = new Promise((resolve, reject) => {
+const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Готово!");
   }, 2000);
 });
-promise.then(result => {
+promise1.then(result => {
   console.log(result);
 });
 // пример с использованием Promise и async/await
@@ -150,7 +150,7 @@ function wait(ms) {
 }
 
 
-const promise1 = new Promise((resolve, reject) => {
+const promise2 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("foo");
   }, 300);
@@ -197,14 +197,15 @@ run();
 // async/await это синтаксис для асинхронных операций
 // промис это объект, который может быть в состоянии выполнен, отклонен или в процессе выполнения
 
-// ращобраться почему не работает терминал.
+// разобраться почему не работает терминал.
 
 function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const promise = wait(1000);
+const promise3 = wait(1000);
 console.log(promise);
 
 // Expected output: Promise { <pending> }
 // wait это функция, которая возвращает промис с заданной задержкой
+

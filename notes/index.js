@@ -211,27 +211,27 @@ console.log(promise);
 
 
 // Игра "Угадай число"
-const secretNumber = Math.floor(Math.random() * 10) + 1;
-let attempts = 3;
+// const secretNumber = Math.floor(Math.random() * 10) + 1;
+// let attempts = 3;
 
-while (attempts > 0) {
-  const guess = Number(prompt(
-    `Угадай число от 1 до 10\nОсталось попыток: ${attempts}`
-  ));
+// while (attempts > 0) {
+//   const guess = Number(prompt(
+//     `Угадай число от 1 до 10\nОсталось попыток: ${attempts}`
+//   ));
 
-  if (guess === secretNumber) {
-    alert("🎉 Ты угадал!");
-    break;
-  } else if (guess > secretNumber) {
-    alert("Слишком большое число");
-  } else {
-    alert("Слишком маленькое число");
-  }
+//   if (guess === secretNumber) {
+//     alert("🎉 Ты угадал!");
+//     break;
+//   } else if (guess > secretNumber) {
+//     alert("Слишком большое число");
+//   } else {
+//     alert("Слишком маленькое число");
+//   }
 
-  attempts--;
-}
+//   attempts--;
+// }
 
-if (attempts === 0) {
-  alert(`😢 Попытки закончились. Было число: ${secretNumber}`);
-}
+// if (attempts === 0) {
+//   alert(`😢 Попытки закончились. Было число: ${secretNumber}`);
+// }
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мой сайт</title>
+</head>
+<body>
+
+<h2>Счётчик кликов</h2>
+<button onclick="addClick()">Нажми меня</button>
+<p>Кликов: <span id="count">0</span></p>
+
+<script>
+  let count = 0;
+
+  function addClick() {
+    count++;
+    document.getElementById("count").textContent = count;
+
+    if (count === 5) {
+      alert("Уже 5 кликов!");
+    }
+  }
+</script>
+
+</body>
+</html>

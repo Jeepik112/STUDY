@@ -235,3 +235,4 @@ console.log(promise);
 //   alert(`😢 Попытки закончились. Было число: ${secretNumber}`);
 // }
 
+function 

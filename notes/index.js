@@ -435,3 +435,28 @@ pipe:
 - backend-разработки
 ========================================
 */
+
+
+
+
+
+
+
+function addEvent(element, eventType, handler) {
+  if (element) {
+    element.addEventListener(eventType, handler);
+  }
+}
+
+// Пример использования:
+const button = document.getElementById('myButton');
+
+// Добавляем обработчик клика
+addEvent(button, 'click', function() {
+  console.log('Кнопка нажата!');
+});
+
+// Добавляем обработчик наведения (mouseover)
+addEvent(button, 'mouseover', () => {
+  console.log('Курсор над кнопкой');
+});

@@ -796,3 +796,11 @@ Promise / async:
 - API
 =====================================================
 */
+
+
+
+
+
+function dayStreak(days) {
+  return days.reduce((acc, day) => acc + day, 0);
+}

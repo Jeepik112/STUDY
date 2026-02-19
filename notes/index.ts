@@ -90,3 +90,39 @@ const myAccount = new BankAccount(0, "Alex");
 
 myAccount.balance = 1001;
 
+
+
+
+
+
+
+
+
+
+class BankAccount {
+  private balance: number; // скрытое поле
+
+  constructor(initialBalance: number) {
+    this.balance = initialBalance;
+  }
+
+  // Метод для пополнения
+  deposit(amount: number): void {
+    if (amount > 0) {
+      this.balance += amount;
+    }
+  }
+
+  // Метод для просмотра баланса
+  getBalance(): number {
+    return this.balance;
+  }
+}
+
+const account = new BankAccount(100);
+
+account.deposit(50);
+console.log(account.getBalance()); // 150
+
+// ❌ Ошибка!
+// account.balance = 100000;
